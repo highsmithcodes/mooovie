@@ -21,7 +21,7 @@ exports.createPages = async ({ actions, graphql }) => {
             allMarkdownRemark {
                 edges{
                     node{
-                        frontmatter{
+                        fields{
                             slug
                         }
                     }
@@ -30,7 +30,6 @@ exports.createPages = async ({ actions, graphql }) => {
         }
     `)
 
-    console.log(mdPages)
     mdPages.data.allMarkdownRemark.edges.map(({node}) =>{
         createPage({
             path: node.fields.slug,

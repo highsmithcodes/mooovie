@@ -1,4 +1,8 @@
 var plugins = [{
+      name: 'gatsby-plugin-image',
+      plugin: require('C:/Users/ezrah/Documents/movie-reviews/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
       name: 'gatsby-plugin-manifest',
       plugin: require('C:/Users/ezrah/Documents/movie-reviews/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
       options: {"plugins":[],"name":"Loner Reviews","short_name":"LonerR","start_url":"/","background_color":"#f7f0eb","theme_color":"#a2466c","display":"standalone","icon":"src/images/icon.png","crossOrigin":"use-credentials","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","include_favicon":true,"cacheDigest":"3c5cc2383cb745b9a890210997fb4c0f"},

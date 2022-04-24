@@ -34,6 +34,7 @@ module.exports = {
         'gatsby-plugin-sass',
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
+        'gatsby-plugin-image',
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
