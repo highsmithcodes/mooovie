@@ -1,7 +1,6 @@
 ---
 title: Second Page
 description: You guessed it!
-slug: /second-markdown
 ---
 
 This is the second Page

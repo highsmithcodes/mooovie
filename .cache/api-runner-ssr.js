@@ -1,4 +1,12 @@
-var plugins = []
+var plugins = [{
+      name: 'gatsby-plugin-manifest',
+      plugin: require('C:/Users/ezrah/Documents/movie-reviews/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
+      options: {"plugins":[],"name":"Loner Reviews","short_name":"LonerR","start_url":"/","background_color":"#f7f0eb","theme_color":"#a2466c","display":"standalone","icon":"src/images/icon.png","crossOrigin":"use-credentials","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","include_favicon":true,"cacheDigest":"3c5cc2383cb745b9a890210997fb4c0f"},
+    },{
+      name: 'gatsby-plugin-offline',
+      plugin: require('C:/Users/ezrah/Documents/movie-reviews/node_modules/gatsby-plugin-offline/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    }]
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

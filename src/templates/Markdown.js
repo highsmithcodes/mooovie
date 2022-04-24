@@ -14,11 +14,10 @@ const Markdown = ({data}) => {
 }
 export const pageQuery = graphql `
     query($slug: String) {
-        markdownRemark(frontmatter: {slug:{eq:$slug}}){
+        markdownRemark(fields: {slug:{eq:$slug}}){
             html
             frontmatter{
                 description
-                slug
                 title
             }
         }

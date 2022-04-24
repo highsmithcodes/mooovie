@@ -1,128 +1,7 @@
+"use strict";
 exports.id = "component---src-pages-index-js";
 exports.ids = ["component---src-pages-index-js"];
 exports.modules = {
-
-/***/ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/assertThisInitialized.js ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/extends.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-function _extends() {
-  module.exports = _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _extends.apply(this, arguments);
-}
-
-module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/inheritsLoose.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/inheritsLoose.js ***!
-  \**************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/setPrototypeOf.js");
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  setPrototypeOf(subClass, superClass);
-}
-
-module.exports = _inheritsLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js ***!
-  \*****************************************************************************/
-/***/ ((module) => {
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/setPrototypeOf.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
-  \***************************************************************/
-/***/ ((module) => {
-
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _setPrototypeOf(o, p);
-}
-
-module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
 
 /***/ "./node_modules/gatsby-image/index.js":
 /*!********************************************!*\
@@ -130,7 +9,6 @@ module.exports = _setPrototypeOf, module.exports.__esModule = true, module.expor
   \********************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-"use strict";
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -870,13 +748,44 @@ exports["default"] = _default;
 
 /***/ }),
 
+/***/ "./src/components/Layout.js":
+/*!**********************************!*\
+  !*** ./src/components/Layout.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const Layout = ({
+  children
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Footer, null));
+};
+
+const Footer = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    className: "footer"
+  }, "\xA9 Copyright 2022");
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+/***/ }),
+
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -884,13 +793,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+
 
 
 
 const Index = ({
   data
 }) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_1__["default"], {
     fluid: data.file.childImageSharp.fluid
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "The homepage"));
 };

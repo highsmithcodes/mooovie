@@ -1,7 +1,6 @@
 ---
 title: Would you look at that
 description: You guessed it!
-slug: /first-markdown
 ---
 
 
