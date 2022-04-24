@@ -2,16 +2,18 @@ import React from "react"
 
 const Layout = ({ children }) => {
     return (
+        <>
         <div className="container">
             {children}
-            <Footer></Footer>
         </div>
+        <Footer></Footer>
+        </>
     )
 }
 
 const Footer = () =>{
     return (
-        <footer>
+        <footer className="footer">
             &copy; Copyright 2022
         </footer>
     )
