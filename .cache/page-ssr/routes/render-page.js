@@ -23,6 +23,7 @@ module.exports = Object.assign;
 
 exports.components = {
   "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-js */ "component---cache-dev-404-page-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js */ "./.cache/dev-404-page.js")),
+  "component---src-pages-404-js": () => __webpack_require__.e(/*! import() | component---src-pages-404-js */ "component---src-pages-404-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/404.js */ "./src/pages/404.js")),
   "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js */ "./src/pages/index.js")),
   "component---src-templates-generic-js": () => __webpack_require__.e(/*! import() | component---src-templates-generic-js */ "component---src-templates-generic-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/templates/Generic.js */ "./src/templates/Generic.js")),
   "component---src-templates-markdown-js": () => __webpack_require__.e(/*! import() | component---src-templates-markdown-js */ "component---src-templates-markdown-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/templates/Markdown.js */ "./src/templates/Markdown.js"))

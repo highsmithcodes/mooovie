@@ -1,14 +1,15 @@
 import React from "react";
 import {graphql} from 'gatsby';
+import Layout from '../components/Layout';
 
 const Markdown = ({data}) => {
     const { markdownRemark } = data
     return (
-        <div>
+        <Layout>
             <h1>{markdownRemark.frontmatter.title}</h1>
             <p>{markdownRemark.frontmatter.description}</p>
             <div dangerouslySetInnerHTML={{__html: markdownRemark.html}}/>
-        </div>
+        </Layout>
     )
 }
 export const pageQuery = graphql `

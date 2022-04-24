@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-markdown-js",
     "path": "/second-markdown",
-    "result": {"data":{"markdownRemark":{"html":"<h1>Second Page!</h1>\n<p>This is the second Page</p>\n<h1>H3</h1>\n<ul>\n<li>item 1</li>\n<li>item 2</li>\n<li>item 3</li>\n</ul>","frontmatter":{"description":"You guessed it!","slug":"/second-markdown","title":"Second Page"}}},"pageContext":{"slug":"/second-markdown"}},
+    "result": {"data":{"markdownRemark":{"html":"<p>This is the second Page</p>\n<ul>\n<li>item 1</li>\n<li>item 2</li>\n<li>item 3</li>\n</ul>","frontmatter":{"description":"You guessed it!","slug":"/second-markdown","title":"Second Page"}}},"pageContext":{"slug":"/second-markdown"}},
     "staticQueryHashes": []}

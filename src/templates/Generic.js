@@ -1,11 +1,13 @@
 import React from "react";
+import Layout from '../components/Layout';
+
 
 const Generic = ({pageContext}) => {
     return (
-        <div>
+        <Layout>
             <h1>{pageContext.title}</h1>
             <p>{pageContext.description}</p>
-        </div>
+        </Layout>
     )
 }
 export default Generic

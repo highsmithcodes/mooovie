@@ -1,5 +1,0 @@
-
-    const cmd = require("C:/Users/ezrah/Documents/movie-reviews/node_modules/gatsby/dist/commands/develop-process.js");
-    const args = {"_":["develop"],"verbose":false,"no-color":false,"no-colors":false,"noColors":false,"noColor":false,"json":false,"H":"localhost","host":"localhost","p":"8000","port":49966,"c":"","cert-file":"","certFile":"","k":"","key-file":"","keyFile":"","ca-file":"","caFile":"","graphql-tracing":false,"graphqlTracing":false,"$0":"gatsby","directory":"C:\\Users\\ezrah\\Documents\\movie-reviews","browserslist":[">0.25%","not dead"],"sitePackageJson":{"name":"movie-reviews","version":"1.0.0","description":"","main":"index.js","scripts":{"build":"gatsby build","develop":"gatsby develop","serve":"gatsby build && gatsby serve","test":"echo \"Error: no test specified\" && exit 1"},"keywords":[],"author":"","license":"ISC","dependencies":{"gatsby":"^4.12.1","gatsby-source-filesystem":"^4.12.1","gatsby-transformer-remark":"^5.12.1","react":"^18.0.0","react-dom":"^18.0.0"}},"report":{"errorMap":{}},"useYarn":false,"proxyPort":8000,"ssl":null,"debugInfo":null};
-    cmd(args);
-  
