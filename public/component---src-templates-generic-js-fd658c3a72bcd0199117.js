@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmovie_reviews=self.webpackChunkmovie_reviews||[]).push([[132],{764:function(e,t,n){n.r(t);var l=n(294);t.default=function(e){var t=e.pageContext;return l.createElement("div",null,l.createElement("h1",null,t.title),l.createElement("p",null,t.description))}}}]);
+//# sourceMappingURL=component---src-templates-generic-js-fd658c3a72bcd0199117.js.map
