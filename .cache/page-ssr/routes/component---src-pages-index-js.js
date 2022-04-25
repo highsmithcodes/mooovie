@@ -838,7 +838,7 @@ const Index = ({
       content: data.site.siteMetadata.description
     }],
     title: data.site.siteMetadata.title
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Loner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Featured Posts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Featured Posts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "post-container"
   }, data.allMarkdownRemark.edges.map(({
     node
@@ -846,9 +846,9 @@ const Index = ({
     className: "post-card"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: node.fields.slug
-  }, data.allMarkdownRemark.frontmatter.edges.banner && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "banner-image",
-    fluid: data.allMarkdownRemark.frontmatter.edges.banner.childImageSharp.fluid,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "post-image",
+    fluid: node.frontmatter.banner.childImageSharp.fluid,
     alt: "Banner Image"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     class: "post-card-content"

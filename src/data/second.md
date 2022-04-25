@@ -2,7 +2,7 @@
 title: X
 description: A24 horror movie
 date: 2022-04-24
-categories: ["Horror"]
+categories: ["Review"]
 banner: "../images/x-movie.jpeg"
 ---
 

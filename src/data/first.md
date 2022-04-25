@@ -1,7 +1,7 @@
 ---
 title: The Rental
 description: An American Horror movie written, produced and directed by James Franco
-categories: ["Horror"]
+categories: ["Review"]
 date: 2022-04-23
 banner: "../images/the-rental-movie.jpeg"
 ---

@@ -39,6 +39,7 @@ body{
     font-weight: 700;
     color: var(--color);
     transition: 0.25s;
+    display: inline-block;
     
     &:hover,
     &:focus { 
@@ -135,6 +136,16 @@ body{
                 text-decoration: none;
             }
         }
+    }
+}
+.single-post-meta {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    p:first-child{
+        padding-right: 10px;
+        border-right: 1px solid #fff;
+        margin-right: 10px;
     }
 }
 .footer{

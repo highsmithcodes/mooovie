@@ -14,8 +14,11 @@ const Markdown = ({data}) => {
                 />
             )}
             <h1>{markdownRemark.frontmatter.title}</h1>
-            <p>{markdownRemark.frontmatter.description}</p>
             <div dangerouslySetInnerHTML={{__html: markdownRemark.html}}/>
+            <div className="single-post-meta">
+                <p>{markdownRemark.frontmatter.date}</p>
+                <p>{markdownRemark.frontmatter.categories.map(category => <span>{category}</span>)} </p>
+            </div>
         </SingleLayout>
     )
 }
@@ -29,6 +32,8 @@ export const pageQuery = graphql `
             frontmatter{
                 description
                 title
+                date(formatString: "dddd, MMMM Do YYYY")
+                categories
                 banner{
                     childImageSharp {
                         fluid{
