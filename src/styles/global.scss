@@ -42,14 +42,14 @@ body{
     
     &:hover,
     &:focus { 
-        border-color: $main-black;
+        border-color: $main-pink;
         color: $main-white;
-        box-shadow: inset 12.5em 0 0 0 $main-black;
+        box-shadow: inset 12.5em 0 0 0 $main-pink;
     }
 }
 .container{
     flex:1;
-    margin:0 auto;
+    margin: 40px auto;
     padding: 0 20px;
     width:100%;
     max-width:950px;
@@ -71,13 +71,14 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width:100%;
-    justify-content: space-around;
-    
+    width:100%;   
+    .post-image{
+        max-height:30vh;
+    } 
     .post-card{
         background-color:$main-pink;
         margin-bottom: 50px;
-        flex: 0 0 45%;
+        flex: 0 0 46%;
         a{
             text-decoration: none;
         }
@@ -102,6 +103,9 @@ body{
             }
         }
     }
+    .post-card:nth-of-type(odd){
+        margin-right:50px;
+    }
 }
 .header {
     background-color: $main-pink;
@@ -121,13 +125,10 @@ body{
             display: flex;
             align-items: center;
             padding: 0 10px;
-            font-weight: 700;
+            font-weight: 600;
             transition: 0.25s;
             &:hover{
                 background-color: $main-yellow;
-                a{
-                    color:$main-white;
-                }
             }
             a{
                 color: inherit;
@@ -141,14 +142,17 @@ body{
     align-items: center;
     justify-content: center;
     margin-top:10px;
-    min-height: 80px;
-    font-weight: 700;
-    background: $main-yellow;
+    min-height: 50px;
     color: $main-white;
+    background-color: $main-yellow;
 }
 
 @media (max-width: $breakpoint-tablet) {
     .post-card{
         flex: 0 0 100% !important;
+        margin:0 0 20px 0 !important;
     }
+    .post-image{
+        max-height:80vh !important;
+    } 
 }

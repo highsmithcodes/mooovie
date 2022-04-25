@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Lonely Reviews',
+        title: 'Loner Reviews',
         author: 'Ezra Highsmith',
         description: "A movie review site for lonely people",
         siteUrl: 'https://thunderous-brigadeiros-0e2a01.netlify.app/',

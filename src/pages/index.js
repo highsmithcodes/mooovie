@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout';
 import {Helmet} from 'react-helmet';
+import Image from "gatsby-image"
 
 const Index = ({ data }) => {
     return (
@@ -13,12 +14,15 @@ const Index = ({ data }) => {
                 ]}
                 title={data.site.siteMetadata.title}
             />
-            <h1>Loner</h1>
-            <h3>Featured Posts</h3>
+            <h1>Featured Posts</h1>
             <div className='post-container'>
                 {data.allMarkdownRemark.edges.map(({ node }) => (
                     <div className="post-card">
                         <Link to={node.fields.slug}>
+                            <Image className="post-image"
+                            fluid={node.frontmatter.banner.childImageSharp.fluid}
+                            alt="Banner Image"
+                            />
                             <div class="post-card-content">
                                 <h3>{node.frontmatter.title}</h3>
                                 <div className='post-card-meta'>
@@ -54,6 +58,13 @@ export const homepageQuery = graphql`
                         title
                         description
                         date(formatString: "dddd, MMMM Do YYYY")
+                        banner{
+                            childImageSharp {
+                                fluid{
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                     fields{
                         slug

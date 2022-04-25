@@ -9,7 +9,7 @@ const allReviews = ({ data }) => {
             <Helmet 
                 htmlAttributes={{lang: 'en'}}
                 meta={[
-                    {name: 'description', content: "Lonely Reviews | All Reviews"},
+                    {name: 'description', content: "Loner Reviews | All Reviews"},
                 ]}
                 title="All Reviews"
             />

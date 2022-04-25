@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 const Footer = () =>{
     return (
         <footer className="footer">
-            &copy; Copyright 2022
+            &copy; Copyright 2022 Loner Reviews
         </footer>
     )
 }
