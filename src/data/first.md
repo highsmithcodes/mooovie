@@ -1,11 +1,10 @@
 ---
-title: Would you look at that
-description: You guessed it!
+title: The Rental
+description: An American Horror movie written, produced and directed by James Franco
+categories: ["Horror"]
 date: 2022-04-23
+banner: "../images/the-rental-movie.jpeg"
 ---
-
-
-![the alt text](../images/goofy.jpeg)
 
 
 Taciti lobortis praesent eros, convallis commodo sociosqu aliquam libero. Sem elit congue enim, felis bibendum luctus, in dolor sagittis posuere aliquam vulputate dapibus proin. Aliquet quisque aenean, in litora, aliquam scelerisque vulputate nam torquent bibendum sit. Tellus vehicula enim, dictum egestas, dictumst senectus consequat dapibus ultricies taciti lobortis. Ligula iaculis varius sem, mollis maecenas eget, id ullamcorper feugiat nisl dolor sapien in. Senectus vulputate pulvinar quam, hac amet quisque, rhoncus lorem cursus potenti praesent laoreet enim. Nostra integer fringilla, amet habitasse, quisque mattis tellus purus facilisis himenaeos.

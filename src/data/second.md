@@ -1,7 +1,9 @@
 ---
-title: Second Page
-description: You guessed it!
+title: X
+description: A24 horror movie
 date: 2022-04-24
+categories: ["Horror"]
+banner: "../images/x-movie.jpeg"
 ---
 
 Curae lorem sodales tincidunt, placerat dictum volutpat, sit mollis varius ultrices fusce iaculis molestie erat. Nec varius lacus, turpis convallis, eros platea placerat molestie volutpat. Vestibulum risus habitant eu, purus ad dolor, urna nibh posuere vel phasellus quam. Quam massa adipiscing, mauris sem ultrices libero at. Tortor augue vel dolor, massa pretium facilisis, amet curabitur nec morbi ac litora. Semper facilisis nam porta, mattis pellentesque dictumst, augue justo eros quisque elementum lorem. Maecenas duis tristique semper, bibendum nisl mattis, etiam fusce feugiat mollis leo odio litora sodales. Aliquam habitant donec, turpis fames neque iaculis. Feugiat purus quisque sem, curae dui cubilia, mollis mi luctus varius diam cursus molestie. Nisi inceptos ultricies, ut semper dapibus ipsum erat.

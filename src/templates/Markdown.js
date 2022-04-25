@@ -1,17 +1,27 @@
 import React from "react";
 import {graphql} from 'gatsby';
-import Layout from '../components/Layout';
+import SingleLayout from '../components/SingleLayout';
+import Image from "gatsby-image"
 
 const Markdown = ({data}) => {
     const { markdownRemark } = data
     return (
-        <Layout>
+        <SingleLayout>
+            {markdownRemark.frontmatter.banner && (
+                <Image className="banner-image"
+                fluid={markdownRemark.frontmatter.banner.childImageSharp.fluid}
+                alt="Banner Image"
+                />
+            )}
             <h1>{markdownRemark.frontmatter.title}</h1>
             <p>{markdownRemark.frontmatter.description}</p>
             <div dangerouslySetInnerHTML={{__html: markdownRemark.html}}/>
-        </Layout>
+        </SingleLayout>
     )
 }
+
+
+
 export const pageQuery = graphql `
     query($slug: String) {
         markdownRemark(fields: {slug:{eq:$slug}}){
@@ -19,6 +29,13 @@ export const pageQuery = graphql `
             frontmatter{
                 description
                 title
+                banner{
+                    childImageSharp {
+                        fluid{
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
             }
         }
     }

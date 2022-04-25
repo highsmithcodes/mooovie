@@ -2,16 +2,17 @@ import React from "react"
 import { Link } from 'gatsby'
 import logo from "../images/icon.png"
 
-const Layout = ({ children }) => {
+
+const SingleLayout = ({ children }) => {
     return (
         <>
-            <Header/>
+        <Header></Header>
             <div className="root-wrapper">
             <div className="container">
                 {children}
             </div>
-            <Footer></Footer>
-            </div>
+        <Footer></Footer>
+        </div>
         </>
     )
 }
@@ -23,6 +24,7 @@ const Footer = () =>{
         </footer>
     )
 }
+
 const Header = () =>{
     
     return (
@@ -37,4 +39,5 @@ const Header = () =>{
     )
 }
 
-export default Layout 
+
+export default SingleLayout 

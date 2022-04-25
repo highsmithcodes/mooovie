@@ -31,7 +31,7 @@ const Index = ({ data }) => {
                     </div>
                 ))}
             </div>
-            <Link to="/all-reviews/">See All Reviews</Link>
+            <Link to="/all-reviews/" className='button'>See All Reviews</Link>
         </Layout>
     )
 }
