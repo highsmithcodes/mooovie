@@ -1,4 +1,10 @@
 module.exports = {
+    siteMetadata: {
+        title: 'Lonely Reviews',
+        author: 'Ezra Highsmith',
+        description: "A movie review site for lonely people",
+        siteUrl: 'https://thunderous-brigadeiros-0e2a01.netlify.app/',
+    },
     plugins: [
         {
             resolve: 'gatsby-source-filesystem',
@@ -24,7 +30,7 @@ module.exports = {
                             maxWidth: 800,
                             withWebp: true,
                             tracedSVG: {
-                                color: 'coral',
+                                color: '#fe4352',
                             }
                         }
                     }

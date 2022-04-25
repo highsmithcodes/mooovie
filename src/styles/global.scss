@@ -1,28 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
 
+// Variables
+$main-black: #000;
+$main-white:#fff;
+$main-yellow: #fac70b;
+$main-pink: #fe4352;
+$light-pink: #ffa8bf;
+$breakpoint-tablet: 768px;
+
+
 html {
     box-sizing: border-box;
 }
 *, *:before, *:after{
     box-sizing: inherit;
 }
+
+::selection{
+    background-color: $main-pink;
+}
 body{
-    background:tan;
+    background:$main-black;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-
+.root-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .container{
+    flex:1;
     margin:0 auto;
     padding: 0 20px;
     width:100%;
-    max-width:640px;
+    max-width:950px;
     font-size: 18px;
     line-height: 1.4;
 
+    h1, h2, h3, h4, h5{
+        color:$main-white;
+    }
     h1{
         font-size: 38px;
         text-transform: uppercase;
+    }
+    p{
+        color:$main-white;
+    }
+}
+.post-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-around;
+    
+    .post-card{
+        background-color:$main-pink;
+        margin-bottom: 50px;
+        flex: 0 0 45%;
+        a{
+            text-decoration: none;
+        }
+        .post-card-content{
+            padding: 20px;
+            color:$main-white;
+            h3{
+                margin:0;
+            }
+            .post-card-meta{
+                display: flex;
+                flex-direction: row;
+                p{
+                    color:$light-pink;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+                p:first-child{
+                    padding-right: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -31,7 +91,14 @@ body{
     align-items: center;
     justify-content: center;
     margin-top:10px;
-    min-height: 100px;
-    background: saddlebrown;
-    color:tan;
+    min-height: 80px;
+    font-weight: 700;
+    background: $main-yellow;
+    color: $main-white;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .post-card{
+        flex: 0 0 100% !important;
+    }
 }
