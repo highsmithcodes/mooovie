@@ -14,7 +14,7 @@ const Index = ({ data }) => {
                 ]}
                 title={data.site.siteMetadata.title}
             />
-            <h1>Featured Posts</h1>
+            <h1>New Reviews</h1>
             <div className='post-container'>
                 {data.allMarkdownRemark.edges.map(({ node }) => (
                     <div className="post-card">

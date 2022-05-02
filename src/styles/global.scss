@@ -4,10 +4,10 @@
 $main-black: #000;
 $main-white:#fff;
 $main-yellow: #fac70b;
-$main-pink: #fe4352;
+$main-pink: #ee3639;
 $light-pink: #ffa8bf;
+$main-purple: #66079f;
 $breakpoint-tablet: 768px;
-
 
 html {
     box-sizing: border-box;
@@ -20,7 +20,7 @@ html {
     background-color: $main-pink;
 }
 body{
-    background:$main-black;
+    background:$main-white;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
@@ -30,22 +30,22 @@ body{
     min-height: 100vh;
 }
 .button{
-    background-color:$main-yellow;
+    background-color:$main-pink;
     padding:20px 10px;
     color:$main-white;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 0;
     font-weight: 700;
-    color: var(--color);
+    color: var(--color) !important;
     transition: 0.25s;
     display: inline-block;
     
     &:hover,
     &:focus { 
-        border-color: $main-pink;
+        border-color: $main-yellow;
         color: $main-white;
-        box-shadow: inset 12.5em 0 0 0 $main-pink;
+        box-shadow: inset 12.5em 0 0 0 $main-yellow;
     }
 }
 .container{
@@ -53,19 +53,32 @@ body{
     margin: 40px auto;
     padding: 0 20px;
     width:100%;
-    max-width:950px;
+    max-width:1120px;
     font-size: 18px;
     line-height: 1.4;
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .flex-70{
+            flex:70;
+        }
+        .flex-30{
+            flex:30;
+            padding-left: 20px;
+        }
+    }
 
     h1, h2, h3, h4, h5{
-        color:$main-white;
+        color:$main-black;
     }
     h1{
-        font-size: 38px;
+        font-size: 34px;
+        margin-top:0;
         text-transform: uppercase;
     }
     p{
-        color:$main-white;
+        color:$main-black;
     }
 }
 .post-container{
@@ -74,12 +87,16 @@ body{
     flex-wrap: wrap;
     width:100%;   
     .post-image{
-        max-height:30vh;
+        max-height:27vh;
     } 
     .post-card{
         background-color:$main-pink;
         margin-bottom: 50px;
         flex: 0 0 46%;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        h3, p{
+            color:$main-white;
+        }
         a{
             text-decoration: none;
         }
@@ -96,7 +113,9 @@ body{
                     color:$light-pink;
                     font-size: 14px;
                     font-weight: 700;
-                    margin-bottom: 0;
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin: 0;
                 }
                 p:first-child{
                     padding-right: 10px;
@@ -113,6 +132,7 @@ body{
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+    padding: 0 20px;
     ul{
         display: flex;
         flex-direction: row;
@@ -129,14 +149,45 @@ body{
             font-weight: 600;
             transition: 0.25s;
             &:hover{
-                background-color: $main-yellow;
+                color:$main-white;
             }
             a{
-                color: inherit;
+                color: $main-white;
                 text-decoration: none;
             }
         }
     }
+}
+.sidebar-section {
+    padding-top: 10px;
+    .sidebar-title {
+        font-size: 25px;
+        margin-top: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li { 
+
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid $main-black;
+ 
+            span {
+                font-size: 12px;
+                display: block;
+            }
+        }
+    }
+}
+.neg-header{
+    background-color: $main-pink;
+    height:15em;
+}
+.single-layout .gatsby-image-wrapper{
+    margin-top: -10em;
 }
 .single-post-meta {
     display: flex;
@@ -155,7 +206,7 @@ body{
     margin-top:10px;
     min-height: 50px;
     color: $main-white;
-    background-color: $main-yellow;
+    background-color: $main-pink;
 }
 
 @media (max-width: $breakpoint-tablet) {
