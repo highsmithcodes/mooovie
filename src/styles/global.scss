@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?Poppins:wght@100;300;500;700&display=swap');
 
 // Variables
 $main-black: #000;
@@ -21,7 +21,7 @@ html {
 }
 body{
     background:$main-white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 .root-wrapper{
@@ -32,12 +32,11 @@ body{
 .button{
     background-color:$main-pink;
     padding:20px 10px;
-    color:$main-white;
+    color:$main-white !important;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 0;
     font-weight: 700;
-    color: var(--color) !important;
     transition: 0.25s;
     display: inline-block;
     
